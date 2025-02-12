@@ -1,0 +1,24 @@
+#pump {
+  background-image: radial-gradient(
+      farthest-side at 50% 50%,
+      #3498db 99%,
+      transparent 100%
+    ),
+    conic-gradient(
+      from 0deg at 50% 50%,
+      transparent 0deg,
+      #2980b9 0deg,
+      #2980b9 30deg,
+      transparent 30deg,
+      transparent 330deg,
+      #2980b9 330deg,
+      #2980b9 from 45deg at 50% 50%,
+      #2980b9,
+      #2980b9,
+      transparent 30deg,
+      #2980b9 30deg,
+      #2980b9
+    );
+  background-size: 100px 100px, 100px 100px;
+  background-repeat: no-repeat;
+}

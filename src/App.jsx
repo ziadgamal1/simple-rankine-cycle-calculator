@@ -57,14 +57,10 @@ function App() {
     clearResult();
     setSelectedOption(event.target.value);
     if (event.target.value === "temperature") {
-      setfilepath(
-        "https://ziadgamal1.github.io/simple-rankine-cycle-calculator/saturatedbytemperature.json"
-      );
+      setfilepath("./saturatedbytemperature.json");
       setpropertySelector("temperature");
     } else if (event.target.value === "pressure") {
-      setfilepath(
-        "https://ziadgamal1.github.io/simple-rankine-cycle-calculator/saturated_by_pressure_V1.4.json"
-      );
+      setfilepath("./saturatedbytemperature.json");
       setpropertySelector("pressure");
     }
   }
@@ -89,7 +85,7 @@ function App() {
     }
     const boilerData = await readJSONFile(
       properties.boilerP,
-      "https://ziadgamal1.github.io/simple-rankine-cycle-calculator/compressed_liquid_and_superheated_steam_V1.3.json",
+      "./compressed_liquid_and_superheated_steam_V1.3.json",
       properties.boilerT
     ).then((data) => data[0]);
     const condenserData = await readJSONFile(properties[propertySelector], x);

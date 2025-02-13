@@ -21,7 +21,7 @@ export default async function readJSONFile(x, y, z = undefined) {
         return item[0] === +x;
       }
     });
-    console.log(requiredData);
+    // console.log(requiredData);
     return requiredData;
   } catch (error) {
     console.error("Error reading JSON file:", error);

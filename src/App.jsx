@@ -43,7 +43,7 @@ function App() {
       1,
       (+v.target.value).toFixed(2)
     );
-    console.log(data);
+    // console.log(data);
     // console.log(value.target.value / 10);
     setboilerTemp(data);
   }
@@ -72,7 +72,7 @@ function App() {
   function clearValues() {
     setProperties("");
     setfilepath("");
-    setpropertySelector("");
+    // setpropertySelector("");
     setSelectedOption("");
   }
   async function handleClick(x) {

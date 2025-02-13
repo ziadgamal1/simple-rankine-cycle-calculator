@@ -10,7 +10,7 @@ export default function Properties({ enthalpy, propertySelector }) {
       <p className="properties--p">
         h2 :{" "}
         <em>
-          {(
+          {+(
             enthalpy.condenserData[7] +
             0.1 *
               (enthalpy.boilerData[0] -
@@ -20,10 +20,10 @@ export default function Properties({ enthalpy, propertySelector }) {
         </em>
       </p>
       <p className="properties--p">
-        h3 : <em>{enthalpy.boilerData[5].toFixed(2)} Kj/Kg</em>
+        h3 : <em>{+enthalpy.boilerData[5].toFixed(2)} Kj/Kg</em>
       </p>
       <p className="properties--p">
-        h4 : <em>{enthalpy.condenserData[8].toFixed(2)} Kj/Kg</em>
+        h4 : <em>{+enthalpy.condenserData[8].toFixed(2)} Kj/Kg</em>
       </p>
     </div>
   );

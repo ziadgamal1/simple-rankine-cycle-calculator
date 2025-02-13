@@ -2,7 +2,7 @@
 
 A React-based application to calculate and visualize the Simple Rankine Cycle thermodynamic process.
 
-![Demo Screenshot](./public/Screenshot%202025-02-12%20232107.png)
+![Demo Screenshot](./src/public/Screenshot%202025-02-12%20232107.png)
 
 ## Features
 
